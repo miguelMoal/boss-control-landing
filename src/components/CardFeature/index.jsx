@@ -2,13 +2,11 @@ import { Flex, Text } from "@/components";
 
 const CardFeature = ({ title, body }) => {
   return (
-    <Flex direction="column" justify="center" mt="20px">
-      <Text size="14px" w="250px" weight="bold">
+    <Flex direction="column" align="center" mt="20px" w="220px">
+      <Text size="14px" weight="bold">
         {title}
       </Text>
-      <Text size="14px" w="250px">
-        {body}
-      </Text>
+      <Text size="14px">{body}</Text>
     </Flex>
   );
 };
