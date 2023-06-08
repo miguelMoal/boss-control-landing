@@ -63,7 +63,7 @@ function App() {
         <CustomButton color="white" borderColor="white">
           Empieza tu prueba gratis
         </CustomButton>
-        <Flex>
+        <Flex w="fit-contend" gap="40px">
           <CardFeature
             title={"Gestión de ventas"}
             body={
