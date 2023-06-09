@@ -1,9 +1,13 @@
 //Components
 import { Flex, Text, CustomButton, CardFeature } from "@/components";
+//icons
+import { SalesIcon, ProfitsIcon, UserIcon } from "@/assets/icons";
+//Constants
+import { colors } from "@/constants";
 
 const Features = () => {
   return (
-    <Flex align="center" direction="column" gap="40px">
+    <Flex align="center" direction="column" gap="50px">
       <Text size="30px" weight="bold">
         Vision General
       </Text>
@@ -16,23 +20,32 @@ const Features = () => {
       <CustomButton color="white" borderColor="white">
         Empieza tu prueba gratis
       </CustomButton>
-      <Flex justify="space-around">
-        <CardFeature
-          title={"Gestión de ventas"}
-          body={
-            "La plataforma te permitirá registrar y gestionar tus ventas de productos."
-          }
-        />
-        <CardFeature
-          title={" Control de ingresos"}
-          body={
-            "La plataforma te facilitara el seguimiento de los ingresos generados por las ventas."
-          }
-        />
-        <CardFeature
-          title={"Gestion de colaboradores"}
-          body={"Delega permisos a tus colaboradores."}
-        />
+      <Flex justify="space-around" mt="50px">
+        <Flex color={colors.error} direction="column" align="center">
+          <SalesIcon />
+          <CardFeature
+            title={"Gestión de ventas"}
+            body={
+              "La plataforma te permitirá registrar y gestionar tus ventas de productos."
+            }
+          />
+        </Flex>
+        <Flex color={colors.success} direction="column" align="center">
+          <ProfitsIcon />
+          <CardFeature
+            title={" Control de ingresos"}
+            body={
+              "La plataforma te facilitara el seguimiento de los ingresos generados por las ventas."
+            }
+          />
+        </Flex>
+        <Flex color={colors.secondaryColor} direction="column" align="center">
+          <UserIcon />
+          <CardFeature
+            title={"Gestion de colaboradores"}
+            body={"Delega permisos a tus colaboradores."}
+          />
+        </Flex>
       </Flex>
     </Flex>
   );

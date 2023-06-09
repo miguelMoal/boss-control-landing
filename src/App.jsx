@@ -4,7 +4,17 @@ import "./App.css";
 import { Flex, NavBar, Text, SquareFloat } from "@/components";
 
 //Screens
-import { Features, Sale } from "@/screens";
+import {
+  Features,
+  Sale,
+  Users,
+  Products,
+  Reinvest,
+  Analytic,
+  History,
+} from "@/screens";
+//Constants
+import { colors } from "@/constants";
 
 function App() {
   return (
@@ -42,7 +52,9 @@ function App() {
         className="containerHome"
       >
         <Flex direction="column" w="fit-content" align="center">
-          <Text size="60px">BOSS-CONTROL</Text>
+          <Text size="60px" color={colors.secondaryColor}>
+            BOSS-CONTROL
+          </Text>
           <Text size="20px" weight="bold">
             Toma el control de tu negocio
           </Text>
@@ -50,6 +62,11 @@ function App() {
       </Flex>
       <Features />
       <Sale />
+      <Products />
+      <Reinvest />
+      <Analytic />
+      <Users />
+      <History />
     </div>
   );
 }
