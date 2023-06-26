@@ -1,8 +1,6 @@
 import "./App.css";
-
 //Components
 import { Flex, NavBar, Text, SquareFloat } from "@/components";
-
 //Screens
 import {
   Features,

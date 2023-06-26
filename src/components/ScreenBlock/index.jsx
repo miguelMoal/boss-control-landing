@@ -18,11 +18,17 @@ const ScreenBlock = ({
       direction="column"
       color={colors.section}
       style={{ position: "relative" }}
+      smallStyles={`background: red`}
     >
       <div style={{ position: "absolute", left: -100, top: -50, zIndex: 0 }}>
         <BGSale width="800" height="600" />
       </div>
-      <Flex gap="20px" mt="20px" style={{ zIndex: 1 }}>
+      <Flex
+        gap="20px"
+        mt="20px"
+        style={{ zIndex: 1 }}
+        smallStyles={`flex-direction:column; align-items:center `}
+      >
         <Flex w="60%" direction="column" style={{ order: toLeft ? 1 : 2 }}>
           <Text
             w="100%"
@@ -40,6 +46,7 @@ const ScreenBlock = ({
           direction="column"
           pd="20px"
           style={{ borderRadius: "5px", order: !toLeft ? 1 : 2 }}
+          smallStyles={`width:70%; `}
         >
           {children}
         </Flex>
