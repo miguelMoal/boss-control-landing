@@ -47,13 +47,12 @@ function App() {
         mt="30px"
         align="center"
         justify="center"
-        className="containerHome"
       >
-        <Flex direction="column" w="fit-content" align="center">
-          <Text size="60px" color={colors.secondaryColor}>
+        <Flex direction="column" w="fit-content" align="center" >
+          <Text size="60px" color={colors.secondaryColor}  smallStyles={`font-size: 40px`}>
             BOSS-CONTROL
           </Text>
-          <Text size="20px" weight="bold">
+          <Text size="20px" weight="bold" smallStyles={`font-size: 16px`}>
             Toma el control de tu negocio
           </Text>
         </Flex>

@@ -11,6 +11,18 @@ const Text = styled.div`
   font-weight: ${({ weight }) => weight || "ligth"};
   color: ${({ color }) => color || "white"};
   width: ${({ w }) => w || "fit-content"};
+
+  @media (max-width: 767px) {
+    ${({ smallStyles }) => smallStyles}
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    ${({ mediumStyles }) => mediumStyles}
+  }
+
+  @media (min-width: 1024px) {
+    ${({ largeStyles }) => largeStyles}
+  }
 `;
 
 export default Text;

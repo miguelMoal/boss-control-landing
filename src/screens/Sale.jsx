@@ -11,6 +11,7 @@ const Sale = () => {
         toLeft={true}
         title={"Realiza tus ventas con nuestra innovadora funcion"}
         alignTitle="start"
+        orderImg={1}
       >
         <Text color="white" style={{ textAlign: "start" }} mb="10px">
           Ahora puedes tener el control total de tus productos y ventas en un

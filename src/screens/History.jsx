@@ -10,6 +10,7 @@ const History = () => {
       img={historyScreen}
       title={`Historial de ventas`}
       alignTitle="end"
+      orderImg={0}
     >
       <Text style={{ textAlign: "start" }} color="white">
         Una función imprescindible para cualquier negocio que desee llevar un

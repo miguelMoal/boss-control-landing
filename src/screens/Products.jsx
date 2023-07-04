@@ -10,6 +10,7 @@ const Products = () => {
       img={products}
       alignTitle="end"
       title={"Controla la existencia de tus productos "}
+      orderImg={0}
     >
       <Text color="white" style={{ textAlign: "start" }} mb="10px">
         Con esta funcion de inventariado altamente efectiva y confiable para la

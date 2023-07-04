@@ -13,6 +13,8 @@ const CustomButton = styled.div`
   margin-bottom: ${({ mb }) => mb || "0px"};
   margin-left: ${({ ml }) => ml || "0px"};
   margin-right: ${({ mr }) => mr || "0px"};
+  background-size: 210% 210%;
+  background-position: 100% 0;
   cursor: pointer;
 `;
 

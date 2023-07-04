@@ -10,6 +10,7 @@ const Reinvest = () => {
       img={reinvestScreen}
       toLeft={true}
       alignTitle="start"
+      orderImg={1}
     >
       <Text style={{ textAlign: "start" }} color="white" mb="10px">
         Esta funcion esta diseñada para ayudarte a tomar decisiones de inversión

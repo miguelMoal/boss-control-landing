@@ -10,6 +10,7 @@ const ScreenBlock = ({
   img,
   toLeft,
   alignTitle = "start",
+  orderImg = 1
 }) => {
   return (
     <Flex
@@ -18,7 +19,6 @@ const ScreenBlock = ({
       direction="column"
       color={colors.section}
       style={{ position: "relative" }}
-      smallStyles={`background: red`}
     >
       <div style={{ position: "absolute", left: -100, top: -50, zIndex: 0 }}>
         <BGSale width="800" height="600" />
@@ -29,12 +29,12 @@ const ScreenBlock = ({
         style={{ zIndex: 1 }}
         smallStyles={`flex-direction:column; align-items:center `}
       >
-        <Flex w="60%" direction="column" style={{ order: toLeft ? 1 : 2 }}>
+        <Flex w="60%" direction="column" style={{ order: orderImg }} smallStyles={`width :90%`}>
           <Text
             w="100%"
             size="30px"
             mb="20px"
-            style={{ textAlign: alignTitle }}
+            smallStyles={`align-text: center`}
           >
             {title}
           </Text>
@@ -45,8 +45,7 @@ const ScreenBlock = ({
           w="40%"
           direction="column"
           pd="20px"
-          style={{ borderRadius: "5px", order: !toLeft ? 1 : 2 }}
-          smallStyles={`width:70%; `}
+          smallStyles={`width:70%; order: 1; width: 100%`}
         >
           {children}
         </Flex>

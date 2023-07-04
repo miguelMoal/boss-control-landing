@@ -10,6 +10,7 @@ const Analytic = () => {
       img={analyticScreen}
       title={"Análisis de ventas con gráficas"}
       alignTitle="end"
+      orderImg={0}
     >
       <Text style={{ textAlign: "start" }} color="white">
         Esta función es una herramienta imprescindible para empresas que desean
