@@ -5,11 +5,13 @@ import { colors } from "@/constants";
 
 const NavBar = () => {
   const openLogin = () => {
+    fbq("track", "ClickLogin");
     const externalUrl = "https://boss-control-front.vercel.app/";
     window.open(externalUrl, "_blank");
   };
 
   const openRegister = () => {
+    fbq("track", "ClickRegister");
     const externalUrl = "https://boss-control-front.vercel.app/register";
     window.open(externalUrl, "_blank");
   };
