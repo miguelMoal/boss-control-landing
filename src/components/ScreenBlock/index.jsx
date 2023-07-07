@@ -10,7 +10,7 @@ const ScreenBlock = ({
   img,
   toLeft,
   alignTitle = "start",
-  orderImg = 1
+  orderImg = 1,
 }) => {
   return (
     <Flex
@@ -29,7 +29,12 @@ const ScreenBlock = ({
         style={{ zIndex: 1 }}
         smallStyles={`flex-direction:column; align-items:center `}
       >
-        <Flex w="60%" direction="column" style={{ order: orderImg }} smallStyles={`width :90%`}>
+        <Flex
+          w="60%"
+          direction="column"
+          style={{ order: orderImg }}
+          smallStyles={`width :90%`}
+        >
           <Text
             w="100%"
             size="30px"

@@ -38,14 +38,14 @@ const NavBar = () => {
       </Text>
       <Flex w="fit-content" gap="10px">
         <CustomButton
-          bg={colors.btnDanger}
+          bg={colors.btnSuccess}
           color="white"
           onClick={() => openLogin()}
         >
           Inicia
         </CustomButton>
         <CustomButton
-          bg={colors.btnSuccess}
+          bg={colors.btnWarning}
           color="white"
           onClick={() => openRegister()}
         >

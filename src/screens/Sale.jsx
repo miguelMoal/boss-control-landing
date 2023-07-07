@@ -5,7 +5,7 @@ import SaleScreen from "@/assets/saleScreen.jpg";
 
 const Sale = () => {
   return (
-    <Flex>
+    <Flex style={{ overflow: "hidden" }}>
       <ScreenBlock
         img={SaleScreen}
         toLeft={true}

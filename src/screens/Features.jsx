@@ -25,10 +25,10 @@ const Features = () => {
       </Text>
       <CustomButton
         color="white"
-        bg={colors.btnDanger}
+        bg={colors.btnSuccess}
         onClick={() => openLogin()}
       >
-        Abrir en nueva ventana
+        Primeros 30 días GRATIS
       </CustomButton>
       <Flex
         justify="space-around"
