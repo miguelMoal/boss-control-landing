@@ -18,9 +18,9 @@ const SquareFloat = ({
         position: "absolute",
         top,
         left,
-        zIndex: 1,
         animation: "moveLR 7s infinite",
         animationDelay,
+        zIndex: 10,
       }}
     ></div>
   );

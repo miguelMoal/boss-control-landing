@@ -22,13 +22,15 @@ function App() {
   };
 
   return (
-    <div className="containerHome">
-      <div
+    <>
+      {/* <div
         style={{
           height: "100vh",
           width: "100vw",
           position: "absolute",
           overflow: "hidden",
+          top: 0,
+          zIndex: 1,
         }}
       >
         <SquareFloat top={-200} />
@@ -54,48 +56,50 @@ function App() {
           opacity={4}
           animationDelay={"5s"}
         />
-      </div>
-
-      <NavBar />
-      <Flex
-        h="calc(100vh - 60px)"
-        w="100%"
-        mt="30px"
-        align="center"
-        justify="center"
-      >
-        <Flex direction="column" w="fit-content" align="center">
-          <Text
-            size="60px"
-            color={colors.secondaryColor}
-            smallStyles={`font-size: 40px`}
-          >
-            BOSS-CONTROL
-          </Text>
-          <Text size="20px" weight="bold" smallStyles={`font-size: 16px`}>
-            Toma el control de tu negocio
-          </Text>
-          <Text size="18px" smallStyles={`font-size: 16px`} w="90%" mb="20px">
-            Controla tus ganancias y tus inversiones, nunca más te quedarás sin
-            inventario.
-          </Text>
-          <CustomButton
-            color="white"
-            bg={"#2DC7EE"}
-            onClick={() => openLogin()}
-          >
-            <Text weight="bold">Primeros 30 días GRATIS</Text>
-          </CustomButton>
+      </div> */}
+      <div className="containerHome">
+        <NavBar />
+        <Flex
+          h="calc(100vh - 60px)"
+          w="100%"
+          mt="30px"
+          align="center"
+          justify="center"
+          style={{ zIndex: 10 }}
+        >
+          <Flex direction="column" w="fit-content" align="center">
+            <Text
+              size="60px"
+              color={colors.secondaryColor}
+              smallStyles={`font-size: 40px`}
+            >
+              BOSS-CONTROL
+            </Text>
+            <Text size="20px" weight="bold" smallStyles={`font-size: 16px`}>
+              Toma el control de tu negocio
+            </Text>
+            <Text size="18px" smallStyles={`font-size: 16px`} w="90%" mb="20px">
+              Controla tus ganancias y tus inversiones, nunca más te quedarás
+              sin inventario.
+            </Text>
+            <CustomButton
+              color="white"
+              bg={"#2DC7EE"}
+              onClick={() => openLogin()}
+            >
+              <Text weight="bold">Primeros 30 días GRATIS</Text>
+            </CustomButton>
+          </Flex>
         </Flex>
-      </Flex>
-      <Features />
-      <Sale />
-      <Products />
-      <Reinvest />
-      <Analytic />
-      <Users />
-      <History />
-    </div>
+        <Features />
+        <Sale />
+        <Products />
+        <Reinvest />
+        <Analytic />
+        <Users />
+        <History />
+      </div>
+    </>
   );
 }
 
