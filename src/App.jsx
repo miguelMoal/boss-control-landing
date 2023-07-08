@@ -1,6 +1,6 @@
 import "./App.css";
 //Components
-import { Flex, NavBar, Text, SquareFloat } from "@/components";
+import { Flex, NavBar, Text, SquareFloat, CustomButton } from "@/components";
 //Screens
 import {
   Features,
@@ -15,6 +15,12 @@ import {
 import { colors } from "@/constants";
 
 function App() {
+  const openLogin = () => {
+    fbq("track", "gratis");
+    const externalUrl = "https://boss-control-front.vercel.app/";
+    window.open(externalUrl, "_blank");
+  };
+
   return (
     <div className="containerHome">
       <div
@@ -69,10 +75,17 @@ function App() {
           <Text size="20px" weight="bold" smallStyles={`font-size: 16px`}>
             Toma el control de tu negocio
           </Text>
-          <Text size="18px" smallStyles={`font-size: 16px`} w="90%">
+          <Text size="18px" smallStyles={`font-size: 16px`} w="90%" mb="20px">
             Controla tus ganancias y tus inversiones, nunca más te quedarás sin
             inventario.
           </Text>
+          <CustomButton
+            color="white"
+            bg={"#2DC7EE"}
+            onClick={() => openLogin()}
+          >
+            <Text weight="bold">Primeros 30 días GRATIS</Text>
+          </CustomButton>
         </Flex>
       </Flex>
       <Features />
