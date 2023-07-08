@@ -17,7 +17,7 @@ import { colors } from "@/constants";
 function App() {
   const openLogin = () => {
     fbq("track", "gratis");
-    const externalUrl = "https://boss-control-front.vercel.app/";
+    const externalUrl = "https://boss-control-front.vercel.app/register";
     window.open(externalUrl, "_blank");
   };
 

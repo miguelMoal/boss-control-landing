@@ -8,7 +8,7 @@ import { colors } from "@/constants";
 const Features = () => {
   const openLogin = () => {
     fbq("track", "ClickRefisterSummary");
-    const externalUrl = "https://boss-control-front.vercel.app/";
+    const externalUrl = "https://boss-control-front.vercel.app/register";
     window.open(externalUrl, "_blank");
   };
 
